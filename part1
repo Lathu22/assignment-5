@@ -1,0 +1,91 @@
+	<!--
+	Name: lathurshan
+	File: assignment5.html
+	Date: 12 april 2024
+
+	-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Nature Site - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <h1>Fictional Nature Site</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main>
+        <!-- Article -->
+        <article>
+            <h2>Interesting Facts about Bears</h2>
+            <p>Bears are large mammals found in various habitats across the world...</p>
+            <!-- Image with Alt Text -->
+            <img src="bear.jpg" alt="A bear in the wilderness">
+            <p>...</p>
+        </article>
+
+       
+        <audio controls>
+            <source src="audio/bear_sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Table with Caption -->
+        <table>
+            <caption>List of Bear Species</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Scientific Name</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>American Black Bear</td>
+                    <td>Ursus americanus</td>
+                    <td>North America</td>
+                </tr>
+                <!-- More rows here -->
+            </tbody>
+        </table>
+
+        <!-- Show/Hide Comment Control -->
+        <button id="toggleComments">Show Comments</button>
+        <div id="comments" aria-live="polite" style="display: none;">
+            <!-- Comments will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fictional Nature Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>
